@@ -87,6 +87,16 @@ $ php artisan migrate
 
 If the message `Migration table created successfully.` is displayed, the database is ready.
 
+### Mail Settings
+
+Update the Laravel `.env` file for Mailhog settings.
+
+```
+MAIL_DRIVER=smtp
+MAIL_HOST=localhost
+MAIL_PORT=1025
+```
+
 ### Auth Settings
 
 Download package `laravel/ui`.
