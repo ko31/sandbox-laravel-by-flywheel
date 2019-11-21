@@ -59,6 +59,8 @@ Restart the site on the dashboard.
 
 Visit https://laravel.local in your browser, you will see Laravel welcome page.
 
+https://user-images.githubusercontent.com/84167/69327641-322fb500-0c91-11ea-8d26-57851cbc860d.png
+
 ### DB Settings
 
 Launch Adminer on the dashboard, delete all tables with the name `wp_`.
@@ -85,3 +87,33 @@ $ php artisan migrate
 
 If the message `Migration table created successfully.` is displayed, the database is ready.
 
+### Auth Settings
+
+Download package `laravel/ui`.
+
+```
+$ composer require laravel/ui --dev
+```
+
+Generate authentication scaffolding.
+
+```
+# Bootstrap
+$ php artisan ui bootstrap --auth
+
+# Vue
+$ php artisan ui vue --auth
+
+# React
+$ php artisan ui react --auth
+```
+
+Install and build package using npm.
+
+```
+$ npm install && npm run dev
+```
+
+Visit https://laravel.local in your browser, you can register account.
+
+https://user-images.githubusercontent.com/84167/69327652-35c33c00-0c91-11ea-9b37-4768c0bb49c9.png
