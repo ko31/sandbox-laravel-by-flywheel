@@ -59,7 +59,7 @@ Restart the site on the dashboard.
 
 Visit https://laravel.local in your browser, you will see Laravel welcome page.
 
-https://user-images.githubusercontent.com/84167/69327641-322fb500-0c91-11ea-8d26-57851cbc860d.png
+![](https://user-images.githubusercontent.com/84167/69327641-322fb500-0c91-11ea-8d26-57851cbc860d.png)
 
 ### DB Settings
 
@@ -116,4 +116,4 @@ $ npm install && npm run dev
 
 Visit https://laravel.local in your browser, you can register account.
 
-https://user-images.githubusercontent.com/84167/69327652-35c33c00-0c91-11ea-9b37-4768c0bb49c9.png
+![](https://user-images.githubusercontent.com/84167/69327652-35c33c00-0c91-11ea-9b37-4768c0bb49c9.png)
