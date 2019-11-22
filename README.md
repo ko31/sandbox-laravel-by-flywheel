@@ -127,3 +127,40 @@ $ npm install && npm run dev
 Visit https://laravel.local in your browser, you can register account.
 
 ![](https://user-images.githubusercontent.com/84167/69327652-35c33c00-0c91-11ea-9b37-4768c0bb49c9.png)
+
+## IDE Settings
+
+### Laravel IDE Helper
+
+- [barryvdh/laravel\-ide\-helper: Laravel IDE Helper](https://github.com/Barryvdh/laravel-ide-helper)
+
+Launch terminal, and download package.
+
+```
+$ composer require --dev barryvdh/laravel-ide-helper
+```
+
+Clear compiled files.
+
+```
+$ php artisan clear-compiled
+```
+
+Generate helper file.
+
+```
+$ php artisan ide-helper:generate
+```
+
+You can configure your composer.json to do this after each commit:
+
+```
+"scripts":{
+    "post-update-cmd": [
+        "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+        "@php artisan ide-helper:generate",
+        "@php artisan ide-helper:meta"
+    ]
+},
+```
+
